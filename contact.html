@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nalgen Bio Pvt. Ltd.</title>
+    <meta name="description" content="Get in touch with Nalgen Bio for all your laboratory needs. Contact our team for product inquiries, technical support, or partnership opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Nalgen Bio Logo">
+                <span class="logo-text">NALGEN BIO PVT. LTD.</span>
+            </div>
+            <button class="mobile-toggle">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="instruments.html" class="nav-link">Instruments</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="contact-hero-title">Contact Us</h1>
+            <p class="contact-hero-subtitle">We're here to help with all your laboratory needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="section contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <img src="images/location-icon.svg" alt="Location">
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>117 B Jodhpur Park, Kolkata-700068, West Bengal, India</p>
+                </div>
+                
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <img src="images/phone-icon.svg" alt="Phone">
+                    </div>
+                    <h3>Phone Numbers</h3>
+                    <p>9674184385 / 9706036146</p>
+                    <p>Monday to Friday: 9:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <img src="images/email-icon.svg" alt="Email">
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>nalgenbio@gmail.com</p>
+                    <p>We aim to respond within 24 hours</p>
+                </div>
+                
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <img src="images/business-icon.svg" alt="Business Information">
+                    </div>
+                    <h3>Business Information</h3>
+                    <p>GSTIN: 19AAICN2350D1ZN</p>
+                    <p>PAN: AAICN2350D</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-content reveal">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization/Institution</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject*</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry">Inquiry Type*</label>
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="instrument">Instrument Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to Nalgen Bio collecting and storing my data for the purpose of responding to my inquiry.*</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+                    </div>
+                </div>
+                
+                <div class="form-image reveal">
+                    <img src="images/contact-image.jpg" alt="Contact Nalgen Bio">
+                    <div class="quick-contact">
+                        <h3>Need Immediate Assistance?</h3>
+                        <p>For urgent inquiries, please call us directly:</p>
+                        <a href="tel:9674184385" class="phone-link">9674184385</a>
+                        <p>or email us at:</p>
+                        <a href="mailto:nalgenbio@gmail.com" class="email-link">nalgenbio@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <p class="section-subtitle">Visit us at our office in Kolkata</p>
+            
+            <div class="map-container reveal">
+                <!-- Replace with actual Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.2594073549!2d88.36!3d22.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI5JzI0LjAiTiA4OMKwMjEnMzYuMCJF!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="map-info reveal">
+                <div class="info-card">
+                    <h3>Directions</h3>
+                    <p>Our office is located in Jodhpur Park, a residential area in South Kolkata. We are easily accessible by public transportation and private vehicles.</p>
+                    <p>Nearby landmarks: Jodhpur Park Market, Lake Gardens</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Visiting Hours</h3>
+                    <div class="hours-grid">
+                        <div class="day">Monday - Friday</div>
+                        <div class="time">9:00 AM - 6:00 PM</div>
+                        <div class="day">Saturday</div>
+                        <div class="time">10:00 AM - 2:00 PM</div>
+                        <div class="day">Sunday</div>
+                        <div class="time">Closed</div>
+                    </div>
+                    <p class="note">* Appointments are recommended for visits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about our products and services</p>
+            
+            <div class="faq-container reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I place an order for products?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can place an order by contacting our sales team via phone, email, or by filling out the contact form on this page. We will guide you through the ordering process and provide a quotation based on your requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including bank transfers, checks, and online payments. For institutional customers, we also offer payment terms as per institutional policies. Please contact our finance team for specific details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide technical support for instruments?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive technical support for all instruments we supply. This includes installation, training, troubleshooting, and maintenance services. Our technical team is available to assist you with any issues you may encounter.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your delivery timeframe?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery timeframes vary depending on the product and your location. Standard products are typically delivered within 1-2 weeks, while specialized instruments may take 4-6 weeks. We will provide you with a specific delivery estimate when you place your order.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer custom solutions for specific research needs?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer customized solutions tailored to your specific research requirements. Our team of experts will work with you to understand your needs and develop a solution that meets your objectives. Please contact us to discuss your custom requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What warranty do you provide for instruments?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide a standard warranty of 1 year for all instruments, covering manufacturing defects and normal wear and tear. Extended warranty options are also available for purchase. Please refer to the specific instrument documentation for detailed warranty information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Laboratory?</h2>
+                <p>Contact us today to discuss how Nalgen Bio can support your research and diagnostic needs.</p>
+                <div class="cta-buttons">
+                    <a href="tel:9674184385" class="btn btn-primary">Call Us: 9674184385</a>
+                    <a href="mailto:nalgenbio@gmail.com" class="btn btn-secondary">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="Nalgen Bio Logo">
+                    <h3>NALGEN BIO PVT. LTD.</h3>
+                </div>
+                <div class="footer-contact">
+                    <p>117 B Jodhpur Park, Kolkata-700068, West Bengal, India</p>
+                    <p>Phone: 9674184385 / 9706036146</p>
+                    <p>Email: nalgenbio@gmail.com</p>
+                    <p>GSTIN: 19AAICN2350D1ZN</p>
+                    <p>PAN: AAICN2350D</p>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="instruments.html">Instruments</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html#reagents">Reagents</a></li>
+                    <li><a href="products.html#kits">Kits</a></li>
+                    <li><a href="products.html#consumables">Consumables</a></li>
+                    <li><a href="products.html#chemicals">Chemicals</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nalgen Bio Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

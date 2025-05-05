@@ -33,22 +33,51 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Empowering Life Sciences Through Precision, Innovation, and Integrity</h1>
-                <p class="hero-subtitle">Delivering Genomic, Proteomic, and Laboratory Solutions Across India</p>
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
-                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-bg"></div>
-            </div>
+   <!-- Hero Section with Background Video -->
+<section id="hero-section" style="position: relative; overflow: hidden; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+    
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: 0;">
+        <source src="31522-386957694.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+
+    <!-- Hero Content -->
+    <div style="position: relative; z-index: 2; max-width: 800px; padding: 20px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Empowering Life Sciences Through Precision, Innovation, and Integrity</h1>
+        <p style="font-size: 1.25rem; margin-bottom: 2rem;">Delivering Genomic, Proteomic, and Laboratory Solutions Across India</p>
+        <div>
+            <a id="primary-btn" href="services.html" style="padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px; transition: background-color 0.3s;">Explore Our Services</a>
+            <a id="outline-btn" href="contact.html" style="padding: 10px 20px; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s, color 0.3s;">Get in Touch</a>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    // Button Hover Effects via JS
+    const primaryBtn = document.getElementById("primary-btn");
+    const outlineBtn = document.getElementById("outline-btn");
+
+    primaryBtn.addEventListener("mouseenter", () => {
+        primaryBtn.style.backgroundColor = "#0056b3";
+    });
+    primaryBtn.addEventListener("mouseleave", () => {
+        primaryBtn.style.backgroundColor = "#007BFF";
+    });
+
+    outlineBtn.addEventListener("mouseenter", () => {
+        outlineBtn.style.backgroundColor = "white";
+        outlineBtn.style.color = "#000";
+    });
+    outlineBtn.addEventListener("mouseleave", () => {
+        outlineBtn.style.backgroundColor = "transparent";
+        outlineBtn.style.color = "white";
+    });
+</script>
+
 
     <!-- Introduction Section -->
     <section class="section intro">

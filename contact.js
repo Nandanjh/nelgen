@@ -1,22 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Form submission handling
-    const contactForm = document.getElementById('contactForm');
-    const formSuccess = document.getElementById('formSuccess');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simulate form submission (in a real application, this would be an AJAX request)
-            setTimeout(() => {
-                contactForm.style.display = 'none';
-                formSuccess.style.display = 'block';
-                
-                // Reset form for future use
-                contactForm.reset();
-            }, 1000);
-        });
-    }
     
     // FAQ accordion functionality
     const faqItems = document.querySelectorAll('.faq-item');
